@@ -3,13 +3,13 @@ public class BlockDemo {
         BlockDemo blockDemo1 = new BlockDemo();
         BlockDemo blockDemo2 = new BlockDemo();
     }
-    static{// statik blok
+    static{// statik blok - sınıf ilk kez çağırıldıpında bir kere çağırılır
         System.out.println("inside static block");
     }
-    {// instance blok
+    {// instance blok - sınıf ikinci veya daha fazla oalrak çalıştırıldığında constr.dan önce çalışır
         System.out.println("inside instance blck");
     }
-    public BlockDemo(){
+    public BlockDemo(){// constructır blok - sınıf çalıştırıldığında instance den sonra çalışır.
         System.out.println("inside constructor");
     }
 }
