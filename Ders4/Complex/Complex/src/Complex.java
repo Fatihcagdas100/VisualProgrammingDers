@@ -29,4 +29,7 @@ public class Complex {
     public String toString() {
         return this.real + " + " + this.imag + "i";
     }
+    public boolean equals(Complex other) {
+        return this.real == other.real && this.imag == other.imag;
+    }
 }
